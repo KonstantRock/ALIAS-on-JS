@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Caveat', cursive;
+  background-color: rgb(155, 150, 150);
+  font-family: 'Rubik', sans-serif;
+}
+
+.disabled {
+  display: none;
+}
+
+.phone-frame {
+  width: 360px;
+  height: 1vh;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-btn {
+
+}
+
