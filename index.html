@@ -5,19 +5,110 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/css/style.css">
-  <title>Document</title>
+  <title>Document</title> 
 </head>
 <body>
   <div class="container">
-    <div class="menu-container">
-      <div class="button-container">
-        <button>Продолжить игру</button>
-        <button>Новая игра</button>
-        <button>Режим игры</button>
-        <button>Правила</button>
+
+    <div class="menu__container">
+
+      <div class="menu__button-container">
+        <button class="menu__btn">Продолжить игру</button>
+        <button class="menu__btn">Новая игра</button>
+        <button class="menu__btn">Режим игры</button>
+        <button class="menu__btn">Правила</button>
       </div>
+
     </div>
+
+    <div class="settings__container">
+
+      <h2 class="settings__header">Настройки</h2>
+
+      <div class="dictionaries">
+        <h3 class="dictionaries__header">Словари</h3>
+        <div class="dictionaries__content">
+          <div class="dictionaries__icon"></div>
+          <div class="dictionaries__description">
+            <h4>Название словаря</h4>
+            <p>перечисление выбранных словарей</p>
+          </div>
+        </div>
+        <div class="dictionaries__footer">
+          <p>Слов: 99999</p>
+        </div>
+      </div>
+
+      <div class="teams">
+        <h3 class="teams__header">Команды</h3>
+        <div class="teams__team">
+          <div class="teams__team-icon"></div>
+          <div class="teams__team-name">Название команды</div>
+          <button class="teams__remove-button"></button>
+        </div>
+        <div class="teams__team">
+          <div class="teams__team-icon"></div>
+          <div class="teams__team-name"></div>
+          <button class="teams__remove-button"></button>
+        </div>
+      </div>
+
+      <div class="add-team">
+        <button class="add-team__button">добавить команду</button>
+      </div>
+
+      <div class="round-length">
+        <div class="round-length__description"> 
+          <h3 class="round-length__header">Длина раунда</h3>
+          <h4 class="round-length__text">Продолжительность раунда в секундах</h4>
+        </div>
+        <output for="slider-1" class="round-length__value"></output>
+        <div class="round-length__slider">
+          <input class="round-length__slider" type="range" name="round-length__slider" id="slider-1">
+        </div>
+      </div>
+
+      <div class="score-to-win">
+        <div class="score-to-win__description"> 
+          <h3 class="score-to-win__header">Очки за победу</h3>
+          <h4 class="score-to-win__text">Количество очков для победы</h4>
+        </div>
+        <output for="slider-2" class="score-to-win__value"></output>
+        <div class="score-to-win__slider">
+          <input class="score-to-win__slider" type="range" name="score-to-win__slider" id="slider-2">
+        </div>
+      </div>
+
+      <div class="miss-penalty">
+        <div class="miss-penalty__description">
+          <h3 class="miss-penalty__header">Штраф за пропуски</h3>
+          <h4 class="miss-penalty__text">За каждое пропущенное слово снимается 1 очко</h4>
+        </div>
+        <input class="miss-penalty__checkbox" type="checkbox" name="miss-penalty__radiobutton" id="">
+      </div>
+
+      <div class="last-word">
+        <div class="last-word__description">
+          <h3 class="last-word__header">Последнее слово для всех</h3>
+          <h4 class="last-word__text">Последнее слово могут угадывать все команды</h4>
+        </div>
+        <input class="last-word__checkbox" type="checkbox" name="last-word__radiobutton" id="">
+      </div>
+
+      <div class="endgame-tasks">
+        <div class="endgame-tasks__description">
+          <h3 class="endgame-tasks__header">Задание для проигравших</h3>
+          <h4 class="endgame-tasks__text">Участники проигравшей команды должны выполнить смешное задание</h4>
+        </div>
+        <input class="endgame-tasks__radiobutton" type="radio" name="endgame-tasks__radiobutton" id="">
+      </div>
+
+      <button class="start-game">начать игру</button>
+
+    </div>
+
   </div>
+
 </body>
 <script type="module" src="src/js/app.js"></script>
 </html>

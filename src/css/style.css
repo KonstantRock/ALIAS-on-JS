@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap');
+@font-face {
+	font-family: 'Rubik';
+	src: url('../fonts/rubik.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/rubik.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/rubik.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/rubik.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/rubik.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/rubik.svg#rubik') format('svg'); /* Chrome < 4, Legacy iOS */
+}
 
 * {
   box-sizing: border-box;
@@ -7,7 +15,6 @@
 }
 
 body {
-  font-family: 'Caveat', cursive;
   background-color: rgb(155, 150, 150);
   font-family: 'Rubik', sans-serif;
 }
@@ -16,17 +23,38 @@ body {
   display: none;
 }
 
-.phone-frame {
-  width: 360px;
-  height: 1vh;
+.container {
+
 }
 
-.button-container {
+.menu__container {
+  width: 360px;
+  padding: 25vh 0;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.menu__button-container {
+  height: 50vh;
+  width: 70%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 
-.menu-btn {
+.menu__btn {
+  min-height: 50px;
+  padding: 10px;
+}
 
+.settings__container {
+  width: 360px;
+  height: 100vh;
+  padding: 20px 0;
+  margin: 0 auto;
+  border: 2px solid red;
+  border-radius: 20px;
 }
 
